@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./codemirror/lib/codemirror.css">
+    <script src="./codemirror/lib/codemirror.js"></script>
+    <script src="./codemirror/addon/selection/active-line.js"></script>
+    <script src="func.js"></script>
+
+    <script src="./codemirror/mode/clike/clike.js"></script>
+    <script src="./codemirror/mode/clojure/clojure.js"></script>
+    <script src="./codemirror/mode/cobol/cobol.js"></script>
+    <script src="./codemirror/mode/css/css.js"></script>
+    <script src="./codemirror/mode/d/d.js"></script>
+    <script src="./codemirror/mode/dart/dart.js"></script>
+    <script src="./codemirror/mode/go/go.js"></script>
+    <script src="./codemirror/mode/groovy/groovy.js"></script>
+    <script src="./codemirror/mode/haskell/haskell.js"></script>
+    <script src="./codemirror/mode/haxe/haxe.js"></script>
+    <script src="./codemirror/mode/julia/julia.js"></script>
+    <script src="./codemirror/mode/lua/lua.js"></script>
+    <script src="./codemirror/mode/markdown/markdown.js"></script>
+    <script src="./codemirror/mode/perl/perl.js"></script>
+    <script src="./codemirror/mode/php/php.js"></script>
+    <script src="./codemirror/mode/python/python.js"></script>
+    <script src="./codemirror/mode/ruby/ruby.js"></script>
+    <script src="./codemirror/mode/rust/rust.js"></script>
+    <script src="./codemirror/mode/sql/sql.js"></script>
+    <script src="./codemirror/mode/swift/swift.js"></script>
+    <script src="./codemirror/mode/xml/xml.js"></script>
+    <script src="./codemirror/mode/yaml/yaml.js"></script>
+
+    <link rel="stylesheet" href="./codemirror/theme/base16-dark.css">
+    <link rel="stylesheet" href="./codemirror/theme/base16-light.css">
+    <link rel="stylesheet" href="./codemirror/theme/cobalt.css">
+    <link rel="stylesheet" href="./codemirror/theme/darcula.css">
+    <link rel="stylesheet" href="./codemirror/theme/eclipse.css">
+    <link rel="stylesheet" href="./codemirror/theme/idea.css">
+    <link rel="stylesheet" href="./codemirror/theme/material.css">
+    <link rel="stylesheet" href="./codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="./codemirror/theme/solarized.css">
+    <link rel="stylesheet" href="./codemirror/theme/tomorrow-night-bright.css">
+    <link rel="stylesheet" href="./codemirror/theme/tomorrow-night-eighties.css">
+
+</head>
+<body>
+<style>
+    html, body{ 
+      margin: 0;
+    }
+</style>
+<textarea id='code'></textarea>
+<script>
+    var code = document.getElementById('code');
+    var editor = CodeMirror.fromTextArea(code, {
+    lineNumbers: true,
+    mode: "text/x-java",
+    styleActiveLine: true,
+    });
+    editor.on("change",function(){
+        Android.onChange()
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/edit">
+
+        <CheckBoxPreference
+            android:key="lineNumbers"
+            android:title="@string/lineNumbers"
+            android:checked="true"/>
+
+        <CheckBoxPreference
+            android:key="matchBrackets"
+            android:title="@string/matchBrackets" />
+
+        <CheckBoxPreference
+            android:key="smartIndent"
+            android:title="@string/smartIndent" />
+
+        <CheckBoxPreference
+            android:key="lineWrapping"
+            android:title="@string/lineWrapping"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/highlight_and_theme">
+
+        <ListPreference
+            android:key="theme"
+            android:title="@string/theme"
+            android:summary="@string/current"
+            android:entries="@array/entries_theme"
+            android:entryValues="@array/entry_values_theme"
+            android:dialogTitle="@string/theme"
+            android:icon="@drawable/theme"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/other">
+
+        <Preference
+            android:key="extension"
+            android:title="@string/extension"
+            android:icon="@drawable/extension"/>
+
+        <Preference
+            android:key="check_updates"
+            android:title="@string/check_updates"
+            android:icon="@drawable/update"/>
+
+        <Preference
+            android:key="feedback"
+            android:title="@string/feedback"
+            android:icon="@drawable/feedback"/>
+
+        <Preference
+            android:key="about"
+            android:title="@string/about"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
