@@ -58,6 +58,22 @@
                 android:title="@string/redo">
             </item>
             <item
+                android:id="@+id/select_all"
+                android:orderInCategory="100"
+                android:title="@string/select_all"
+                android:checkable="true">
+            </item>
+            <item
+                android:id="@+id/copy"
+                android:orderInCategory="100"
+                android:title="@string/copy">
+            </item>
+            <item
+                android:id="@+id/paste"
+                android:orderInCategory="100"
+                android:title="@string/paste">
+            </item>
+            <item
                 android:id="@+id/read_only"
                 android:orderInCategory="100"
                 android:title="@string/read_only"
