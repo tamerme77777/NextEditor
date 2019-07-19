@@ -18,10 +18,14 @@
     <string name="copy">复制</string>
     <string name="paste">粘贴</string>
 
+    <string name="indentUnit">缩进单位</string>
+    <string name="tabSize">Tab字符宽度</string>
     <string name="lineWrapping">自动换行</string>
     <string name="lineNumbers">显示行号</string>
     <string name="matchBrackets">括号匹配</string>
     <string name="smartIndent">智能缩进</string>
+    <string name="indentWithTabs">Tab替换空格</string>
+    <string name="electricChars">重新缩进</string>
     <string name="highlight_and_theme">高亮和主题</string>
     <string name="other">其他</string>
     <string name="extension">扩展</string>
