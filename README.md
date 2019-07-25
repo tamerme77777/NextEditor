@@ -1,6 +1,6 @@
 # NextEditor
 
-NextEditor是一款Android端的基于CodeMirror的文本编辑器。
+NextEditor是一款Android端的基于[CodeMirror](https://github.com/codemirror/CodeMirror)的文本编辑器。
 
 ## 应用截图
 ![0](res/0.png) 
