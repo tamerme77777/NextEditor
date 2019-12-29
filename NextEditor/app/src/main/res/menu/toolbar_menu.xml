@@ -60,8 +60,7 @@
             <item
                 android:id="@+id/select_all"
                 android:orderInCategory="100"
-                android:title="@string/select_all"
-                android:checkable="true">
+                android:title="@string/select_all">
             </item>
             <item
                 android:id="@+id/copy"

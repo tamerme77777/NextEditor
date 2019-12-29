@@ -51,10 +51,6 @@ public class EditorFragment extends Fragment {
                 super.onPageFinished(view, url);
                 SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
                 setTheme(preferences.getString("theme", "idea"));
-                lineWrapping(preferences.getBoolean("lineWrapping", false));
-                lineNumbers(preferences.getBoolean("lineNumbers", true));
-                smartIndent(preferences.getBoolean("smartIndent", false));
-                matchBrackets(preferences.getBoolean("matchBrackets", false));
                 if (flag){
                     open();
                     flag = false;
@@ -107,22 +103,6 @@ public class EditorFragment extends Fragment {
 
     public void setTheme(String theme) {
         webView.evaluateJavascript("javascript:setTheme('" + theme + "')", null);
-    }
-
-    public void lineWrapping(boolean value) {
-        webView.evaluateJavascript("javascript:lineWrapping('" + value + "')", null);
-    }
-
-    public void lineNumbers(boolean value) {
-        webView.evaluateJavascript("javascript:lineNumbers('" + value + "')", null);
-    }
-
-    public void smartIndent(boolean value) {
-        webView.evaluateJavascript("javascript:smartIndent('" + value + "')", null);
-    }
-
-    public void matchBrackets(boolean value) {
-        webView.evaluateJavascript("javascript:matchBrackets('" + value + "')", null);
     }
 
     public void undo() {

@@ -2,46 +2,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
-        android:title="@string/edit">
-
-        <EditTextPreference
-            android:key="indentUnit"
-            android:title="@string/indentUnit"
-            android:summary="缩进单位,默认为2"/>
-
-        <EditTextPreference
-            android:key="tabSize"
-            android:title="@string/tabSize"
-            android:summary="Tab字符的宽度，默认为4"/>
-
-        <CheckBoxPreference
-            android:key="lineNumbers"
-            android:title="@string/lineNumbers"
-            android:checked="true"/>
-
-        <CheckBoxPreference
-            android:key="matchBrackets"
-            android:title="@string/matchBrackets" />
-
-        <CheckBoxPreference
-            android:key="smartIndent"
-            android:title="@string/smartIndent" />
-
-        <CheckBoxPreference
-            android:key="lineWrapping"
-            android:title="@string/lineWrapping"/>
-
-        <CheckBoxPreference
-            android:key="indentWithTabs"
-            android:title="@string/indentWithTabs"/>
-
-        <CheckBoxPreference
-            android:key="electricChars"
-            android:title="@string/electricChars"/>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:title="@string/highlight_and_theme">
 
         <ListPreference
@@ -53,30 +13,6 @@
             android:dialogTitle="@string/theme"
             android:icon="@drawable/theme"/>
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/other">
-
-        <Preference
-            android:key="extension"
-            android:title="@string/extension"
-            android:icon="@drawable/extension"/>
-
-        <Preference
-            android:key="check_updates"
-            android:title="@string/check_updates"
-            android:icon="@drawable/update"/>
-
-        <Preference
-            android:key="feedback"
-            android:title="@string/feedback"
-            android:icon="@drawable/feedback"/>
-
-        <Preference
-            android:key="about"
-            android:title="@string/about"
-            android:icon="@drawable/about"/>
     </PreferenceCategory>
 
 </PreferenceScreen>

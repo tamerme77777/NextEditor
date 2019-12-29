@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_theme">
+        <item>base16-dark</item>
+        <item>base16-light</item>
+        <item>cobalt</item>
+        <item>darcula</item>
+        <item>eclipse</item>
+        <item>idea</item>
+        <item>material</item>
+        <item>monokai</item>
+        <item>solarized</item>
+        <item>tomorrow-night-bright</item>
+        <item>tomorrow-night-eighties</item>
+    </string-array>
+    <string-array name="entry_values_theme">
+        <item>base16-dark</item>
+        <item>base16-light</item>
+        <item>cobalt</item>
+        <item>darcula</item>
+        <item>eclipse</item>
+        <item>idea</item>
+        <item>material</item>
+        <item>monokai</item>
+        <item>solarized</item>
+        <item>tomorrow-night-bright</item>
+        <item>tomorrow-night-eighties</item>
+    </string-array>
+</resources>
