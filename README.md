@@ -1,0 +1,2 @@
+# NextEditor
+Android text editor.
