@@ -2,7 +2,6 @@ package com.starrysky.nextor;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,8 +18,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.navigation.NavigationView;
-
 
 import java.io.File;
 import java.io.IOException;
@@ -69,7 +66,7 @@ public class FileFragment extends Fragment {
     }
 
     private void initView(){
-        file = Environment.getExternalStorageDirectory();
+        file = new File(FileService.getStoragePath(getContext(),false));
         RecyclerView recyclerView = getActivity().findViewById(R.id.list);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(linearLayoutManager);
